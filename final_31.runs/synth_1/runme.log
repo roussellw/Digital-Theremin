@@ -1,0 +1,403 @@
+
+*** Running vivado
+    with args -log instrument_shell.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source instrument_shell.tcl
+
+
+****** Vivado v2017.3.1 (64-bit)
+  **** SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+  **** IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source instrument_shell.tcl -notrace
+Command: synth_design -top instrument_shell -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11168 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 377.965 ; gain = 95.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'instrument_shell' [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:55]
+INFO: [Synth 8-113] binding component instance 'A_clock_buffer' to cell 'BUFG' [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:136]
+INFO: [Synth 8-3491] module 'mux7seg' declared at 'P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/imports/Lab5_files/mux7seg.vhd:25' bound to instance 'display' of component 'mux7seg' [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:290]
+INFO: [Synth 8-638] synthesizing module 'mux7seg' [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/imports/Lab5_files/mux7seg.vhd:35]
+INFO: [Synth 8-226] default block is never used [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/imports/Lab5_files/mux7seg.vhd:71]
+INFO: [Synth 8-226] default block is never used [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/imports/Lab5_files/mux7seg.vhd:94]
+INFO: [Synth 8-226] default block is never used [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/imports/Lab5_files/mux7seg.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'mux7seg' (1#1) [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/imports/Lab5_files/mux7seg.vhd:35]
+INFO: [Synth 8-3491] module 'dds_Instrument' declared at 'P:/18summer/engs031/G18/final_31/final_31.runs/synth_1/.Xil/Vivado-4192-MECHA-6/realtime/dds_Instrument_stub.vhdl:5' bound to instance 'your_instance_name' of component 'dds_instrument' [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'dds_Instrument' [P:/18summer/engs031/G18/final_31/final_31.runs/synth_1/.Xil/Vivado-4192-MECHA-6/realtime/dds_Instrument_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'pmod_da2' declared at 'P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/pmod_da2.vhd:34' bound to instance 'DA' of component 'pmod_da2' [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:316]
+INFO: [Synth 8-638] synthesizing module 'pmod_da2' [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/pmod_da2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'pmod_da2' (2#1) [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/pmod_da2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'instrument_shell' (3#1) [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:55]
+WARNING: [Synth 8-3917] design instrument_shell has port rx driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 420.047 ; gain = 137.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 420.047 ; gain = 137.543
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [P:/18summer/engs031/G18/final_31/final_31.runs/synth_1/.Xil/Vivado-4192-MECHA-6/dcp3/dds_compiler_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [P:/18summer/engs031/G18/final_31/final_31.runs/synth_1/.Xil/Vivado-4192-MECHA-6/dcp3/dds_compiler_0_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [P:/18summer/engs031/G18/final_31/final_31.srcs/constrs_1/imports/new/instrument.xdc]
+Finished Parsing XDC File [P:/18summer/engs031/G18/final_31/final_31.srcs/constrs_1/imports/new/instrument.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [P:/18summer/engs031/G18/final_31/final_31.srcs/constrs_1/imports/new/instrument.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/instrument_shell_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/instrument_shell_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [P:/18summer/engs031/G18/final_31/final_31.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [P:/18summer/engs031/G18/final_31/final_31.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 728.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for your_instance_name. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element cdcount_reg was removed.  [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/imports/Lab5_files/mux7seg.vhd:53]
+INFO: [Synth 8-5544] ROM "tc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element data_ctr_reg was removed.  [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/pmod_da2.vhd:61]
+INFO: [Synth 8-5546] ROM "aclk_unbuf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "distance" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "M" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "note" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flat" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "take_sample" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element distance_reg was removed.  [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:164]
+WARNING: [Synth 8-6014] Unused sequential element phi_reg was removed.  [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:213]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:268]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 8     
+	  20 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module instrument_shell 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	  20 Input      1 Bit        Muxes := 1     
+Module mux7seg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module pmod_da2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "distance" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "take_sample" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element display/cdcount_reg was removed.  [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/imports/Lab5_files/mux7seg.vhd:53]
+WARNING: [Synth 8-6014] Unused sequential element DA/data_ctr_reg was removed.  [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/pmod_da2.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element distance_reg was removed.  [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:164]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element phi_reg was removed.  [P:/18summer/engs031/G18/final_31/final_31.srcs/sources_1/new/instrument_shell_Version_2.vhd:213]
+WARNING: [Synth 8-3917] design instrument_shell has port rx driven by constant 1
+INFO: [Synth 8-3886] merging instance 'key_reg[0]' (FD) to 'key_reg[1]'
+INFO: [Synth 8-3886] merging instance 'key_reg[1]' (FD) to 'key_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (key_reg[2]) is unused and will be removed from module instrument_shell.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|instrument_shell | note       | 32x4          | LUT            | 
+|instrument_shell | M          | 32x9          | LUT            | 
++-----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dds_Instrument |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |dds_Instrument_bbox_0 |     1|
+|2     |BUFG                  |     2|
+|3     |CARRY4                |    13|
+|4     |LUT1                  |     6|
+|5     |LUT2                  |    29|
+|6     |LUT3                  |    10|
+|7     |LUT4                  |    21|
+|8     |LUT5                  |    21|
+|9     |LUT6                  |    32|
+|10    |FDRE                  |   138|
+|11    |IBUF                  |     4|
+|12    |OBUF                  |    16|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+----------+---------+------+
+|      |Instance  |Module   |Cells |
++------+----------+---------+------+
+|1     |top       |         |   309|
+|2     |  DA      |pmod_da2 |    45|
+|3     |  display |mux7seg  |    48|
++------+----------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 728.230 ; gain = 445.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 728.230 ; gain = 137.543
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 728.230 ; gain = 445.727
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 728.230 ; gain = 454.934
+INFO: [Common 17-1381] The checkpoint 'P:/18summer/engs031/G18/final_31/final_31.runs/synth_1/instrument_shell.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file instrument_shell_utilization_synth.rpt -pb instrument_shell_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 728.230 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 25 16:16:21 2018...

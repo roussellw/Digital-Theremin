@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Sat Aug 25 16:16:29 2018
+# Process ID: 7864
+# Current directory: P:/18summer/engs031/G18/final_31/final_31.runs/impl_1
+# Command line: vivado.exe -log instrument_shell.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source instrument_shell.tcl -notrace
+# Log file: P:/18summer/engs031/G18/final_31/final_31.runs/impl_1/instrument_shell.vdi
+# Journal file: P:/18summer/engs031/G18/final_31/final_31.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source instrument_shell.tcl -notrace
