@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Sat Aug 18 16:08:41 2018
+# Process ID: 6580
+# Current directory: P:/18summer/engs031/G18/debug_miniproject.runs/impl_1
+# Command line: vivado.exe -log pmod_da2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pmod_da2.tcl -notrace
+# Log file: P:/18summer/engs031/G18/debug_miniproject.runs/impl_1/pmod_da2.vdi
+# Journal file: P:/18summer/engs031/G18/debug_miniproject.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pmod_da2.tcl -notrace
